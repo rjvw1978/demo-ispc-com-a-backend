@@ -1,4 +1,7 @@
 from django.urls import path
-from .views import saludar
+from .views import UserView
 
-urlpatterns=[ path('bienvenido/', saludar)]
+urlpatterns = [
+    path('users/', UserView.as_view()),
+    ]
+
